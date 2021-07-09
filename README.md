@@ -2,37 +2,6 @@
 
 **Sway EndeavourOS Community Edition**
 
-## To Install manually
-
-    git clone https://github.com/EndeavourOS-Community-Editions/sway.git
-
-    cd sway
-
-    bash sway-install.sh
-   
-## Contained In The Script
-    cp -R .config/* ~/.config/
-    
-    cp .profile ~/.profile
-    
-    cp .gtkrc-2.0 ~/.gtkrc-2.0
-    
-    chmod -R +x ~/.config/sway/scripts
-    
-    chmod -R +x ~/.config/waybar/scripts
-    
-    sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
-    
-    dbus-launch dconf load / < xed.dconf
-    
-Lightdm Setup is Commented by Default
-
-    sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
-    
-    systemctl enable lightdm
-    
-    systemctl start lightdm
-    
 ## Post install
 
 - Keyboard layout in: `~/.config/sway/config.d/input`
